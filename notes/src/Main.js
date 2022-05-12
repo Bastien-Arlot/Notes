@@ -13,9 +13,9 @@ function Main({activeNote, onUpdateNote}) {
     return (
         <div className='app-main'>
             <div className='app-main-note-edit'>
-                <input type='text' id='title' value={activeNote.title}
+                <input className={'app-main-input'} type='text' id='title' value={activeNote.title}
                        onChange={(e) => handleChangeEdit("title", e.target.value)} autoFocus/>
-                <textarea id='body' placeholder='Write your note here' value={activeNote.body}
+                <textarea className={'app-main-input'} id='body' placeholder='Write your note here' value={activeNote.body}
                           onChange={(e) => handleChangeEdit("body", e.target.value)}/>
             </div>
 

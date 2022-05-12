@@ -14,7 +14,7 @@ body,
     height: 100vh;
     overflow: hidden;
     font-size: 16px;
-    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
+    background: #FFC482;
 }
 
 button {
@@ -152,4 +152,8 @@ textarea {
     padding: 0 25px 25px 25px;
     font-size: 1rem;
     line-height: 2rem;
+}
+
+.app-main-input{
+    background: #FFC482;
 }
