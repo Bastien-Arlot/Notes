@@ -1,4 +1,4 @@
-function Sidebar() {
+function Sidebar({notes}) {
     return (<div className="app-sidebar">
             <div className="app-sidebar-header">
                 <h1>Notes</h1>
@@ -7,6 +7,7 @@ function Sidebar() {
 
             </div>
             <div className='app-sidebar-notes'>
+                {notes.map((notes) => (
                 <div className='app-sidebar-note'>
                     <div className='sidebar-note-title'>
                         <strong>TITLE</strong>
@@ -20,6 +21,7 @@ function Sidebar() {
 
                     <small className='note-meta'>Last modified [date]</small>
                 </div>
+                    ))}
             </div>
         </div>
 
