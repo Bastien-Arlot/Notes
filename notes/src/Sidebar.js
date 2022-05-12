@@ -8,7 +8,8 @@ function Sidebar({notes, onAddNote, onDeleteNote, setActiveNote, activeNote}) {
             </div>
             <div className='app-sidebar-notes'>
                 {notes.map((note) => (
-                    <div className={`app-sidebar-note  ${note.id === activeNote && "active"}`} onClick={() => setActiveNote(note.id)}>
+                    <div className={`app-sidebar-note  ${note.id === activeNote && "active"}`}
+                         onClick={() => setActiveNote(note.id)}>
                         <div className='sidebar-note-title'>
                             <strong>{note.title}</strong>
                             <button onClick={() => onDeleteNote(note.id)}>Delete</button>
