@@ -1,7 +1,13 @@
-function Main({activeNote}) {
+function Main({activeNote, onUpdateNote}) {
     const handleChangeEdit = (key, value) => {
-
+        onUpdateNote({
+            id: activeNote.id,
+            [key]: value,
+        lastModified: Date.now(),
+        })
     };
+
+    if(!activeNote) return <div className="no-active-note">No note selected</div>;
     return (
         <div className='app-main'>
             <div className='app-main-note-edit'>

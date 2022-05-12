@@ -32,7 +32,7 @@ function App() {
 
     const onUpdateNote = (updatedNote) => {
         const updatedNotesArray = notes.map((note) => {
-            if(note.id === activeNote){
+            if (note.id === activeNote) {
                 return updatedNote
             }
 
@@ -48,7 +48,8 @@ function App() {
                      onDeleteNote={onDeleteNote}
                      activeNote={activeNote}
                      setActiveNote={secActiveNote}/>
-            <Main activeNote={getActiveNote()} />
+            <Main activeNote={getActiveNote()}
+                  onUpdateNote={onUpdateNote}/>
         </div>
     );
 }
