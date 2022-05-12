@@ -10,7 +10,7 @@ function App() {
     const [notes, setNotes] = useState([])
 
     const onAddNote = () => {
-        const newNote ={
+        const newNote = {
             id: uuid(),
             title: "Untitled Note",
             body: "",
@@ -19,10 +19,16 @@ function App() {
 
         setNotes([newNote, ...notes]);
     }
+
+    const onDeleteNote = (id) => {
+        setNotes(notes.filter((note) => note.id !== id));
+
+    }
     return (
         <div className="App">
             <Sidebar notes={notes}
-                     onAddNote={onAddNote}/>
+                     onAddNote={onAddNote}
+                     onDeleteNote={onDeleteNote}/>
             <Main/>
         </div>
     );
