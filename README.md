@@ -13,7 +13,7 @@ Notes<br>
 
 ## WEB version 🌐
 
-You can use it for yourself 👉 [Notes](https://bastien-arlot.github.io/notes/)
+You can use it for yourself 👉 [Notes](https://Bastien-Arlot.github.io/Notes/)
 
 ## Stack Used ⚙️
 
